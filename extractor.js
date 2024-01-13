@@ -14,7 +14,7 @@ function extractUnixTimestamp(postId) {
 }
 
 function unixTimestampToHumanDate(timestamp) {
-  const dateObject = new Date(timestamp)*1000;
+  const dateObject = new Date(timestamp);
   // Convert to IST
   dateObject.setHours(dateObject.getHours() + 5);
   dateObject.setMinutes(dateObject.getMinutes() + 30);
